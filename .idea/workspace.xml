@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="309877e0-1ac7-4098-8a96-d628a150f068" name="Default Changelist" comment="" />
+    <list default="true" id="309877e0-1ac7-4098-8a96-d628a150f068" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsDisplayRecord/ldsDisplayRecord.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsDisplayRecord/ldsDisplayRecord.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsNewRecord/ldsNewRecord.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsNewRecord/ldsNewRecord.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsNewRecord/ldsNewRecordController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsNewRecord/ldsNewRecordHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsSaveRecord/ldsSaveRecord.cmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsSaveRecord/ldsSaveRecord.cmp-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aura/ldsSaveRecord/ldsSaveRecordController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP 111.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP 111.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Lightning Component" />
+        <option value="Apex Metadata" />
+        <option value="Lightning Controller" />
+        <option value="Lightning Helper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
@@ -13,14 +38,36 @@
         <entry key="TP 111">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1584430665041" />
+              <option name="moduleContentsLastModified" value="1584432944115" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
       </map>
     </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="TP 11">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="AURADEFINITIONBUNDLE:LDSDISPLAYRECORD" value="1584432276299" />
+                      <entry key="AURADEFINITIONBUNDLE:LDSNEWRECORD" value="1584433389341" />
+                      <entry key="AURADEFINITIONBUNDLE:LDSSAVERECORD" value="1584432879283" />
+                    </map>
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1ZFN0yUQ2eS9dbUlnnCLB1yO23N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>

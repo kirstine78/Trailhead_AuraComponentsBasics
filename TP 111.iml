@@ -111,6 +111,10 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="addItemEvent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="BoatSearch" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -120,14 +124,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="BoatSearchResults" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Map" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="addItemEvent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -200,6 +196,26 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="kirstineApp" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsDeleteRecord" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsDisplayRecord" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsNewRecord" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsSaveRecord" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Map" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>

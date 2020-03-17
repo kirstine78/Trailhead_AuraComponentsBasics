@@ -1,0 +1,34 @@
+<!--
+ - Created by Kirsti on 17/03/2020.
+ -->
+
+<aura:component implements="flexipage:availableForRecordHome, force:hasRecordId" description="accEdit"> <!--inherit recordId attribute-->
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="accountRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    <force:recordData aura:id="recordEditor"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.record}"
+                      targetFields ="{!v.accountRecord}"
+                      mode="EDIT" />
+
+    Challenge edit account name form
+    <!-- Display an editing form -->
+    <lightning:card iconName="action:edit" title="Edit Account">
+        <div class="slds-p-horizontal--small">
+            <lightning:input label="Account Name" value="{!v.accountRecord.Name}"/>
+            <br/>
+            <lightning:button label="Save Account" variant="brand" onclick="{!c.handleSaveRecord}" />
+        </div>
+    </lightning:card>
+    Challenge edit account name form end
+
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            {!v.recordError}
+        </div>
+    </aura:if>
+</aura:component>

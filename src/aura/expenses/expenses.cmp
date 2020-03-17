@@ -1,0 +1,69 @@
+<!--
+ - Created by Kirsti on 15/03/2020.
+ -->
+
+<aura:component controller="ExpensesController">
+
+    <aura:attribute name="expenses" type="Expense__c[]"/>
+
+<!--    In this case, we’re saying that we’ll handle the init event, and that we’ll handle it with the doInit action handler in our controller-->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler name="updateExpense" event="c:expensesItemUpdate"
+                  action="{!c.handleUpdateExpense}"/>
+    <aura:handler name="createExpense" event="c:expensesItemUpdate"
+                  action="{!c.handleCreateExpense}"/>
+
+
+    <!-- PAGE HEADER -->
+    <lightning:layout class="slds-page-header slds-page-header--object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="My Expenses"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h1 class="slds-text-heading--label">Expenses</h1>
+                <h2 class="slds-text-heading--medium">My Expenses</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- / PAGE HEADER -->
+
+    <!-- NEW EXPENSE FORM -->
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small" size="6">
+            <!-- CREATE NEW EXPENSE -->
+            <div aria-labelledby="newexpenseform">
+                <!-- BOXED AREA -->
+                <fieldset class="slds-box slds-theme--default slds-container--small">
+                    <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">
+                        Add Expense
+                    </legend>
+
+                    <!-- NEW EXPENSE FORM -->
+                    <lightning:layout >
+                        <lightning:layoutItem padding="around-small" size="6">
+                            <c:expenseForm/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                    <!-- END NEW EXPENSE FORM -->
+
+                </fieldset>
+                <!-- / BOXED AREA -->
+            </div>
+            <!-- / CREATE NEW EXPENSE -->
+
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- / NEW EXPENSE FORM -->
+
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small" size="6">
+            <c:expensesList expenses="{!v.expenses}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" size="6">
+            Put something cool here
+        </lightning:layoutItem>
+    </lightning:layout>
+
+
+</aura:component>

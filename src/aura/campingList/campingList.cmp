@@ -1,0 +1,53 @@
+<!--
+ - Created by Kirsti on 15/03/2020.
+ -->
+
+<aura:component description="campingList" controller="CampingListController">
+
+    <aura:attribute name="items" type="Camping_Item__c[]"/>
+    <aura:attribute name="newItem" type="Camping_Item__c"
+                    default="{ 'sobjectType': 'Camping_Item__c',
+                        'Quantity__c': 0,
+                        'Price__c': 0 }"/>
+
+    <!--    In this case, we’re saying that we’ll handle the init event, and that we’ll handle it with the doInit action handler in our controller-->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler name="addItem" event="c:addItemEvent"
+                  action="{!c.handleAddItem}"/>
+
+
+    <!-- NEW item FORM -->
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small" size="6">
+            <!-- CREATE NEW item -->
+            <div aria-labelledby="newitemform">
+                <!-- BOXED AREA -->
+                <fieldset class="slds-box slds-theme--default slds-container--small">
+                    <legend id="newitemform" class="slds-text-heading--small slds-p-vertical--medium">
+                        Add Item
+                    </legend>
+
+                    <!-- CREATE NEW item FORM -->
+                    <c:campingListForm/>
+                    <!-- / CREATE NEW item FORM -->
+
+                </fieldset>
+                <!-- / BOXED AREA -->
+            </div>
+            <!-- / CREATE NEW EXPENSE -->
+
+        </lightning:layoutItem>
+    </lightning:layout>
+
+
+
+
+    <lightning:card title="Camping Items">
+
+        <p class="slds-p-horizontal--small">
+            <aura:iteration items="{!v.items}" var="item">
+                <c:campingListItem item="{!item}"/>
+            </aura:iteration>
+        </p>
+    </lightning:card>
+</aura:component>

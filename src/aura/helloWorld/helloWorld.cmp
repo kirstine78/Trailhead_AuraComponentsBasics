@@ -1,0 +1,13 @@
+<!--
+ - Created by Kirsti on 15/03/2020.
+
+ This file is the "definition resource" of this bundle.
+ -->
+
+<aura:component>
+
+    <c:helloHeading/>
+
+    <p>Hello Lightning!</p>
+
+</aura:component>

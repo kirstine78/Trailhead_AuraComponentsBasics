@@ -1,0 +1,8 @@
+<!--
+ - Created by Kirsti on 15/03/2020.
+ -->
+
+<aura:component description="helloMessage">
+    <aura:attribute name="message" type="String"/>
+    <p>{!'Hello! ' + v.message}</p>
+</aura:component>
